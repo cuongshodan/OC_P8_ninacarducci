@@ -113,3 +113,11 @@ Changement
 * add `title` to head
 * add defer to script
 * compress slide images
+* compress all images
+* lazy loading on img slide
+
+* alt to camera.jpg and nina.jpg
+* add alt the all images
+
+* lang on html
+* add for on label form
