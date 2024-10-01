@@ -105,6 +105,11 @@ résultat général
 
 ---
 
+
+---
+
 Changement
 
 * add `title` to head
+* add defer to script
+* compress slide images
