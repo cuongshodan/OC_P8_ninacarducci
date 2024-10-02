@@ -121,3 +121,11 @@ Changement
 
 * lang on html
 * add for on label form
+* change header orders
+* add meta description
+* constrast of active link tous
+* compression image slider en webp
+* utiliser bootstap.min.css
+* utiliser bootstrap.bundle.min.js
+* link preload slider unsplash.webp
+* remove bootstrap.bundle.min.js since no use?
