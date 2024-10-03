@@ -3,14 +3,24 @@
   "version": "1.0.0",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:html": "html-minifier-terser src/index.html -o dist/index.html --collapse-whitespace --remove-comments --minify-css true --minify-js true",
+    "build:css": "postcss src/assets/css/style.css --use cssnano --no-map --output dist/assets/css/style.css",
+    "build:js": "terser src/assets/js/scripts.js -o dist/assets/js/scripts.js --compress --mangle && terser src/assets/js/maugallery.js -o dist/assets/js/maugallery.js",
+    "build:assets": "copyfiles -u 2 \"src/assets/{images,fonts,bootstrap}/**/*\" dist/assets",
+    "clean": "rimraf dist",
+    "build": "npm run clean && mkdirp dist/assets/css dist/assets/js && npm run build:html && npm run build:css && npm run build:js && npm run build:assets"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cssnano": "^7.0.6",
-    "html-minifier-terser": "^7.2.0",
-    "terser": "^5.34.1"
+    "copyfiles": "^2.4.1",
+    "cpy-cli": "^5.0.0",
+    "cssnano": "^5.1.14",
+    "html-minifier-terser": "^6.1.0",
+    "mkdirp": "^3.0.1",
+    "postcss-cli": "^9.1.0",
+    "rimraf": "^3.0.2",
+    "terser": "^5.12.1"
   }
 }
