@@ -113,6 +113,9 @@ SEO
 * add `title` to head
 * lang on html
 * add meta description
+* add opengraph
+* add twitter cards
+* semantic html
 
 accessibilty
 * constrast of active link tous
@@ -130,10 +133,9 @@ performance
 * utiliser bootstap.min.css
 * utiliser bootstrap.bundle.min.js
 * link preload slider unsplash.webp
-* remove bootstrap.bundle.min.js since no use?
-* create a dev environment
 * minify httl, css, js
 
 deploy
+* creation of dev and prod environment
 * docker
-* nginx + ngix compression
+* nginx + nginx compression
