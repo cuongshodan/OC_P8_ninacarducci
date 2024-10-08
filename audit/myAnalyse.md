@@ -105,27 +105,35 @@ résultat général
 
 ---
 
-
 ---
 
+
 Changement
-
+SEO
 * add `title` to head
-* add defer to script
-* compress slide images
-* compress all images
-* lazy loading on img slide
+* lang on html
+* add meta description
 
+accessibilty
+* constrast of active link tous
+* change header orders
+* add for on label form
 * alt to camera.jpg and nina.jpg
 * add alt the all images
 
-* lang on html
-* add for on label form
-* change header orders
-* add meta description
-* constrast of active link tous
+performance
+* compress slide images
+* compress all images
+* add defer to script
+* *lazy loading on img slide
 * compression image slider en webp
 * utiliser bootstap.min.css
 * utiliser bootstrap.bundle.min.js
 * link preload slider unsplash.webp
 * remove bootstrap.bundle.min.js since no use?
+* create a dev environment
+* minify httl, css, js
+
+deploy
+* docker
+* nginx + ngix compression
