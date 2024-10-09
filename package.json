@@ -8,7 +8,8 @@
     "build:js": "terser src/assets/js/scripts.js -o dist/assets/js/scripts.js --compress --mangle && terser src/assets/js/maugallery.js -o dist/assets/js/maugallery.js",
     "build:assets": "copyfiles -u 2 \"src/assets/{images,fonts,bootstrap}/**/*\" dist/assets",
     "clean": "rimraf dist",
-    "build": "npm run clean && mkdirp dist/assets/css dist/assets/js && npm run build:html && npm run build:css && npm run build:js && npm run build:assets"
+    "build": "npm run clean && mkdirp dist/assets/css dist/assets/js && npm run build:html && npm run build:css && npm run build:js && npm run build:assets",
+    "dev": "http-server src -o"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "cpy-cli": "^5.0.0",
     "cssnano": "^5.1.14",
     "html-minifier-terser": "^6.1.0",
+    "http-server": "^14.1.1",
     "mkdirp": "^3.0.1",
     "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2",
