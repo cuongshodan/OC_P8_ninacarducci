@@ -116,6 +116,7 @@ SEO
 * add opengraph
 * add twitter cards
 * semantic html
+* w3c validate
 
 accessibilty
 * constrast of active link tous

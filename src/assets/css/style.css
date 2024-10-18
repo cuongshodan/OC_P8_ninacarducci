@@ -242,6 +242,52 @@ input[type="submit"] {
   padding: 0.5em 1em;
 }
 
+/* Carousel control buttons customization */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  width: 80px; /* Adjust size */
+  height: 80px; /* Adjust size */
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+  border: none;
+  border-radius: 50%;
+  opacity: 1;
+  padding: 0;
+  display: flex; /* Flexbox for centering */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Positioning */
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+/* Icon styling */
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Hide default Bootstrap icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+
+/* Hover effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 @media all and (max-width: 1180px) {
   .picture {
     flex: 2;

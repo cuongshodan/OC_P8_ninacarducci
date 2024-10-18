@@ -20,6 +20,7 @@
     "cssnano": "^5.1.14",
     "html-minifier-terser": "^6.1.0",
     "http-server": "^14.1.1",
+    "lite-server": "^2.6.1",
     "mkdirp": "^3.0.1",
     "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2",
